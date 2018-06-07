@@ -265,7 +265,7 @@ We usually require five subnets in the VCN to create and deploy clusters in a hi
 
 - Enter the following for the first subnet:
   - **Name:** `oke-workers-1`
-  - **Availability Domain:** `emra:US-ASHBURN-AD-1`
+  - **Availability Domain:** `????:US-ASHBURN-AD-1`
   - **CIDR Block:** `10.0.10.0/24`
   - **Route Table:** `Default Route Table for oke-cluster`
   - **Public Subnet:** `Allow public IP addresses for instances in this Subnet`
@@ -279,9 +279,35 @@ We usually require five subnets in the VCN to create and deploy clusters in a hi
 
 - Click **Create**
 
-- Repeat the above for the remaining two worker subnets **oke-workers-2** and **oke-workers-3** as below:
+- Repeat the above for the remaining two worker subnets **oke-workers-2** and **oke-workers-3** with the values below:
 
-  ![](images/200/86.png)
+- Click **Create Subnet**
+
+  - **Name:** `oke-workers-2`
+  - **Availability Domain:** `????:US-ASHBURN-AD-2`
+  - **CIDR Block:** `10.0.11.0/24`
+  - **Route Table:** `Default Route Table for oke-cluster`
+  - **Public Subnet:** `Allow public IP addresses for instances in this Subnet`
+  - **DNS Resolution:** `Use DNS Hostnames In This Subnet`
+  - **DHCP Options:** `Default DHCP Options for oke-cluster`
+  - **Security Lists:** `oke-workers`
+
+- Click **Create**
+
+
+- Click **Create Subnet**
+
+  - **Name:** `oke-workers-3`
+  - **Availability Domain:** `????:US-ASHBURN-AD-3`
+  - **CIDR Block:** `10.0.12.0/24`
+  - **Route Table:** `Default Route Table for oke-cluster`
+  - **Public Subnet:** `Allow public IP addresses for instances in this Subnet`
+  - **DNS Resolution:** `Use DNS Hostnames In This Subnet`
+  - **DHCP Options:** `Default DHCP Options for oke-cluster`
+  - **Security Lists:** `oke-workers`
+
+- Click **Create**
+
 
 
 - Repeat the above for the two load balancer subnets **oke-loadbalancer-1** and **oke-loadbalancer-2** as below:
