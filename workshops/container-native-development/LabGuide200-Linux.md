@@ -28,6 +28,7 @@ During this lab, you will take on the **DevOps Engineer Persona**. You will prov
   - an Oracle Cloud account that will be supplied by your instructor
 
 
+
 # Provision Kubernetes Using Terraform
 
 ## Set Up Oracle Cloud infrastructure
