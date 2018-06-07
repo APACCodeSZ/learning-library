@@ -281,8 +281,8 @@ We usually require five subnets in the VCN to create and deploy clusters in a hi
 
 - Repeat the above for the remaining two worker subnets **oke-workers-2** and **oke-workers-3** with the values below:
 
-- Click **Create Subnet**
-
+  **oke-workers-2**
+  
   - **Name:** `oke-workers-2`
   - **Availability Domain:** `????:US-ASHBURN-AD-2`
   - **CIDR Block:** `10.0.11.0/24`
@@ -292,10 +292,7 @@ We usually require five subnets in the VCN to create and deploy clusters in a hi
   - **DHCP Options:** `Default DHCP Options for oke-cluster`
   - **Security Lists:** `oke-workers`
 
-- Click **Create**
-
-
-- Click **Create Subnet**
+  **oke-workers-3**
 
   - **Name:** `oke-workers-3`
   - **Availability Domain:** `????:US-ASHBURN-AD-3`
@@ -305,8 +302,6 @@ We usually require five subnets in the VCN to create and deploy clusters in a hi
   - **DNS Resolution:** `Use DNS Hostnames In This Subnet`
   - **DHCP Options:** `Default DHCP Options for oke-cluster`
   - **Security Lists:** `oke-workers`
-
-- Click **Create**
 
 
 
