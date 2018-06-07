@@ -171,6 +171,7 @@ However, if a default Route Table has been created, then you only need to add a 
 
   ![](images/200/74.png)
 
+  - Click **Save*
 
 ### **STEP 3.4**: DHCP Options Configuration
 
