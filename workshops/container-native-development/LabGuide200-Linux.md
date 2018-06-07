@@ -171,13 +171,15 @@ However, if a default Route Table has been created, then you only need to add a 
 
   ![](images/200/74.png)
 
-  - Click **Save*
+  - Click **Save**
+  
+  
 
 ### **STEP 3.4**: DHCP Options Configuration
 
 The VCN must have a DHCP Options configured. The default value for DNS Type of Internet and VCN Resolver is acceptable.
 
-- While still in the VCN `oke-cluster` details page, select **DHCP Options** from the list on the left
+- In the VCN `oke-cluster` details page, select **DHCP Options** from the list on the left
 
   A `Default DHCP Options for oke-cluster` should have been created for you, similar to below.
 
