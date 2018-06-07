@@ -374,7 +374,7 @@ You can now upload the PEM public key in the OCI Console.
   ![](images/200/90.png)
 
 
-### **STEP 4.3**: Installing the Oracle Cloud Infrastructure CLI
+### **STEP 5.3**: Installing the Oracle Cloud Infrastructure CLI
 
 The command line interface (CLI) is a tool that enables you to work with Oracle Cloud Infrastructure objects and services. The CLI provides much the same functionality as the Console and includes additional advanced commands.
 
@@ -461,7 +461,7 @@ To start the Kubernetes Dashboard:
 - Open a browser and go to http://localhost:8001/ui to display the Kubernetes Dashboard.
 
 
-## **STEP 6**:
+## **STEP 7**: Deploying to a Cluster
 
 The Kubernetes cluster setup is complete and you are now able to deploy your application to this cluster. This cluster is can be reached by its cluster address. You can find this address either through the OCI console or in the `kubeconfig` file.
 
@@ -485,7 +485,7 @@ Alternatively:
 
   This should be the same address as the one found in `kubeconfig`.
   
-  You are ready to config Wercker to deploy to this cluster.
+ 
 
 
 
