@@ -71,7 +71,7 @@ To create and manage clusters in your tenancy, Container Engine must have access
 - Enter the following:
   - **Name:** `oke-service`
   - **Description:** `allow OKE to manage all-resources in tenancy`
-  - **Policy Versioning:** Select **Keep Policy Current**, select **Use Version Date** and enter that date in YYYY-MM-DD format.
+  - **Policy Versioning:** Select **Keep Policy Current**
   - **Statement:** The following policy statement:
   `allow service OKE to manage all-resources in tenancy`
 
