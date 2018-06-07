@@ -237,7 +237,7 @@ Let's create the security lists and rules.
 
 ### **STEP 3.5.2**: Create Security List for Load Balancer Subnets
 
-- Repeat Step 2.5.1 for the Load Balancer subnet using the rules below:
+- Repeat Step 3.5.1 for the Load Balancer subnet with the Security List Name of **oke-loadbalancers** using the rules below:
 
   ![](images/200/83.png)
 
