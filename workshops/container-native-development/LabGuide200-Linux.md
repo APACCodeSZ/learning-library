@@ -306,8 +306,6 @@ We usually require five subnets in the VCN to create and deploy clusters in a hi
 
 
 - Repeat the above for the two load balancer subnets **oke-loadbalancers-1** and **oke-loadbalancers-2** as below:
-
-  ![](images/200/87.png)
   
   **oke-loadbalancers-1**
   
