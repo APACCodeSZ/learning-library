@@ -461,7 +461,7 @@ To start the Kubernetes Dashboard:
 - Open a browser and go to http://localhost:8001/ui to display the Kubernetes Dashboard.
 
 
-## **STEP 7**: Deploying to a Cluster
+### **STEP 7**: Deploying to a Cluster
 
 The Kubernetes cluster setup is complete and you are now able to deploy your application to this cluster. This cluster is can be reached by its cluster address. You can find this address either through the OCI console or in the `kubeconfig` file.
 
