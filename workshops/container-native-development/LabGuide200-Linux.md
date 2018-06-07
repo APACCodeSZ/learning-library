@@ -58,7 +58,7 @@ Click on **Change tenant** button if you are not presented with **Cloud Tenant**
 
 
 
-## **STEP 2**: Create Policy for Container Engine
+### **STEP 2**: Create Policy for Container Engine
 
 To create and manage clusters in your tenancy, Container Engine must have access to all resources in the tenancy. To give Container Engine the necessary access, create a policy for the service as follows:
 
@@ -81,7 +81,7 @@ To create and manage clusters in your tenancy, Container Engine must have access
 
   ![](images/200/70.png)
 
-## **STEP 3**: Configuring Network Resources
+### **STEP 3**: Configuring Network Resources
 
 You must create a VCN for your cluster and it must include the following:
 
@@ -280,7 +280,7 @@ With the five subnets connected, we are ready to create a Kubernetes cluster.
 
 
 
-## **STEP 4**: Create a Kubernetes Cluster
+### **STEP 4**: Create a Kubernetes Cluster
   
   
 - In the Console, click **Containers**, choose the **Demo** compartment, and then click **Clusters**
@@ -321,7 +321,7 @@ The Kubernetes cluster is now ready to use.
 
 
 
-## **STEP 5**: Downloading a kubeconfig File to Enable Cluster Access
+### **STEP 5**: Downloading a kubeconfig File to Enable Cluster Access
 
 When you create a cluster, Container Engine creates a Kubernetes configuration file for the cluster called `kubeconfig`. The `kubeconfig` file provides the necessary details to access the cluster using **kubectl** and the Kubernetes Dashboard.
 
@@ -441,7 +441,7 @@ Before using the CLI, you have to create a config file that contains the require
 You can now use kubectl and the Kubernetes Dashboard to perform operations on the cluster.
 
 
-## **STEP 6**: Starting The Kubernetes Dashboard
+### **STEP 6**: Starting The Kubernetes Dashboard
 
 Kubernetes Dashboard is a web-based user interface that you can use as an alternative to the Kubernetes kubectl command line tool to:
 
