@@ -240,10 +240,14 @@ Let's create the security lists and rules.
 - Repeat Step 3.5.1 for the Load Balancer subnet with the Security List Name of **oke-loadbalancers** using the rules below:
 
   ![](images/200/83.png)
+  
+  
+  - Click on **Create Security List** button to complete
 
   You should now have three security lists similar to below:
 
   ![](images/200/84.png)
+
 
 
 ### **STEP 3.6**: Subnet Configuration
