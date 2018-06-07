@@ -305,9 +305,33 @@ We usually require five subnets in the VCN to create and deploy clusters in a hi
 
 
 
-- Repeat the above for the two load balancer subnets **oke-loadbalancer-1** and **oke-loadbalancer-2** as below:
+- Repeat the above for the two load balancer subnets **oke-loadbalancers-1** and **oke-loadbalancers-2** as below:
 
   ![](images/200/87.png)
+  
+  **oke-loadbalancers-1**
+  
+  - **Name:** `oke-loadbalancers-1`
+  - **Availability Domain:** `????:US-ASHBURN-AD-1`
+  - **CIDR Block:** `10.0.20.0/24`
+  - **Route Table:** `Default Route Table for oke-cluster`
+  - **Public Subnet:** `Allow public IP addresses for instances in this Subnet`
+  - **DNS Resolution:** `Use DNS Hostnames In This Subnet`
+  - **DNS Label:** `loadbalancer-1`
+  - **DHCP Options:** `Default DHCP Options for oke-cluster`
+  - **Security Lists:** `oke-loadbalancers`
+
+  **oke-loadbalancers-2**
+
+  - **Name:** `oke-loadbalancers-2`
+  - **Availability Domain:** `????:US-ASHBURN-AD-2`
+  - **CIDR Block:** `10.0.21.0/24`
+  - **Route Table:** `Default Route Table for oke-cluster`
+  - **Public Subnet:** `Allow public IP addresses for instances in this Subnet`
+  - **DNS Resolution:** `Use DNS Hostnames In This Subnet`
+  - **DNS Label:** `loadbalancer-2`
+  - **DHCP Options:** `Default DHCP Options for oke-cluster`
+  - **Security Lists:** `oke-loadbalancers`
 
 With the five subnets connected, we are ready to create a Kubernetes cluster.
 
