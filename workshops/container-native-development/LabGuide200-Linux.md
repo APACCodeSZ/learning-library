@@ -60,7 +60,7 @@ During this lab, you will take on the **DevOps Engineer Persona**. You will prov
 
 - Enter **cloud.admin** and its **password** in the input fields and click **Sign In**
 
-  ![](images/0.5.png)
+  ![](images/200/0.5.png)
 
 - In the Console, open the navigation menu. Under **Identity**, click **Groups**. A list of groups is displayed.
 
