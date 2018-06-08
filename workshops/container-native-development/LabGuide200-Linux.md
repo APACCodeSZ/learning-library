@@ -32,13 +32,14 @@ During this lab, you will take on the **DevOps Engineer Persona**. You will prov
 
 ## Set Up Oracle Cloud infrastructure
 
+
 ### **STEP 1**: Log in to your OCI dashboard
 
 - Please refer to the Cloud Account that has been provided by your workshop instructor. _Please note your account details will be provided separately and are not available on these pages._
 
 - Once you receive the **Oracle Cloud Account**, make note of your **Username, Password, Cloud Tenant Name and Console URL**.
 
-- Open your browser (Firefox or Chrome) and go to your Console URL. As en example, the Console URL will look something like the following:
+- Open your browser (Firefox or Chrome) and go to your Console URL. The Console URL is:
 
    [https://console.us-ashburn-1.oraclecloud.com/#/a/](https://console.us-ashburn-1.oraclecloud.com/#/a/)
     
@@ -51,10 +52,48 @@ Click on **Change tenant** button if you are not presented with **Cloud Tenant**
 - Enter your **Cloud Tenant Name** in the input field and click the **Continue** button. This is supplied by your workshop instructor earlier.
 
   ![](images/200/0.3.png)
+  
+  
+- If you are using an Oracle GSE account, you will be using the default **api.user** to do all provisioning work. This **api.user** does not have the administration rights to create the Kubernetes cluster in OCI. Therefore you must login using the Single Sign-On (SSO) identy first and assign **api.user** to the admin group and then login to **api.user** for the rest of the lab.
 
-- Enter your **Username** and **Password** in the input fields and click **Sign In**. These are supplied by your workshop instructor earlier. The default user will be **api.user**
+- Click **Continue** under the SSO Identity Provider box
+
+- Enter **cloud.admin** and its **password** in the input fields and click **Sign In**
+
+  ![](images/56.png)
+
+- In the Console, open the navigation menu. Under **Identity**, click **Groups**. A list of groups is displayed.
+
+- Click on the **Administrators** group
 
   ![](images/200/0.4.png)
+  
+- Click **Add User to Group**
+
+- Select **api.user** from the drop down list and click **Add**
+
+  The **api.user** is now added to the **Administrators** group and you should see something similar to below.
+  
+  ![](images/200/0.5.png)
+
+- You can now **Sign Out** of the OCI Console.
+
+- Now sign in again using the **api.user** user name for Oracle Cloud Infrastructure on the right side of the login page.
+
+- Click **Sign In**
+
+  ![](images/59.png)
+
+- Ensure you're signed in as **api.user** for the rest of the lab
+
+- You now ready to create policies
+
+
+
+
+
+
+
 
 
 
