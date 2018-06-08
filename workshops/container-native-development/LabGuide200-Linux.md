@@ -60,13 +60,13 @@ Click on **Change tenant** button if you are not presented with **Cloud Tenant**
 
 - Enter **cloud.admin** and its **password** in the input fields and click **Sign In**
 
-  ![](images/56.png)
+  ![](images/0.5.png)
 
 - In the Console, open the navigation menu. Under **Identity**, click **Groups**. A list of groups is displayed.
 
 - Click on the **Administrators** group
 
-  ![](images/200/0.4.png)
+  ![](images/200/0.6.png)
   
 - Click **Add User to Group**
 
@@ -74,7 +74,7 @@ Click on **Change tenant** button if you are not presented with **Cloud Tenant**
 
   The **api.user** is now added to the **Administrators** group and you should see something similar to below.
   
-  ![](images/200/0.5.png)
+  ![](images/200/0.7.png)
 
 - You can now **Sign Out** of the OCI Console.
 
@@ -82,7 +82,7 @@ Click on **Change tenant** button if you are not presented with **Cloud Tenant**
 
 - Click **Sign In**
 
-  ![](images/59.png)
+  ![](images/200/0.8.png)
 
 - Ensure you're signed in as **api.user** for the rest of the lab
 
