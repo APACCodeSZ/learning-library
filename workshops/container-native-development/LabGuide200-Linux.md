@@ -382,7 +382,7 @@ When you create a cluster, Container Engine creates a Kubernetes configuration f
 
 You must download the `kubeconfig` file and set an environment variable to point to it. Having completed the steps, you can start using **kubectl** and the Kubernetes Dashboard to manage the cluster.
 
-**Note: For the current release of Oracle Container Engine, you must install the Oracle Cloud Infrastructure CLI tool in order to download the kubeconfig file. In future releases of the OKE, you will be able to download the kubeconfig file directly from within the OCI Console**
+**NOTE**: For the current release of Oracle Container Engine, you must install the Oracle Cloud Infrastructure CLI tool in order to download the kubeconfig file. In future releases of the OKE, you will be able to download the kubeconfig file directly from within the OCI Console.
 
 
 ### **STEP 5.1**: Generate an API Signing Key Pair
@@ -513,9 +513,13 @@ Before you can use the Kubernetes Dashboard, you need to specify the cluster on 
 
 To start the Kubernetes Dashboard:
 
-- In a terminal window where you have exported the `KUBECONFIG` environment variable, enter `kubectl proxy` to ebable the Kubernetes Dashboard access.
+- In a terminal window where you have exported the `KUBECONFIG` environment variable, enter `kubectl proxy` to proxy server to enable Kubernetes Dashboard access.
 
-- Open a browser and go to http://localhost:8001/ui to display the Kubernetes Dashboard.
+- With the proxy server running, open a browser and go to http://localhost:8001/ui to enter the Kubernetes Dashboard.
+
+  ![](images/200/64.png)
+ 
+
 
 
 ### **STEP 7**: Deploying to a Cluster
@@ -541,34 +545,10 @@ Alternatively:
   ![](images/200/95.png)
 
   This should be the same address as the one found in `kubeconfig`.
-  
- 
+
+- Great! We've got Kubernetes installed and accessible -- now we're ready to get our microservice deployed to the cluster.
 
 
-
-
-
-***********************
-
-
-
-
-- During provisioning, Terraform generated a `kubeconfig` file that will authenticate you to the cluster. Let's configure and start the kubectl proxy server to make sure our cluster is accessible.
-
-- You will need to set an environment variable to point `kubectl` to the location of your Terraform-generated `kubeconfig` file. Then you can start the Kubernetes proxy server, which will let you view the cluster dashboard at a localhost URL.
-
-  ```bash
-  export KUBECONFIG=`pwd`/generated/kubeconfig
-  kubectl proxy
-  ```
-
-  **NOTE**: Should you need to change the IP address of your cluster in the future, you can configure `kubectl` with the updated connection information by running the following command, which will pass the current address and authentication details to **kubectl**: `terraform output kubeconfig | tr '\n' '\0' | xargs -0 -n1 sh -c`
-
-- With the proxy server running and the Load Balancers showing a running status, navigate to the **[Kubernetes dashboard](http://localhost:8001/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/)** in a new browser tab.
-
-  ![](images/200/64.png)
-
-- Great! We've got Kubernetes installed and accessible -- now we're ready to get our microservice deployed to the cluster. The next step is to tell Wercker how and where we would like to deploy our application. In your **terminal window**, press **Control-C** to terminate `kubectl proxy`. We will need the terminal window to gather some cluster info in another step. We'll start the proxy again later.
 
 ## Configure and Run Wercker Deployment Pipelines
 
