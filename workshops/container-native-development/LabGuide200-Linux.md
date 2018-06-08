@@ -382,6 +382,8 @@ When you create a cluster, Container Engine creates a Kubernetes configuration f
 
 You must download the `kubeconfig` file and set an environment variable to point to it. Having completed the steps, you can start using **kubectl** and the Kubernetes Dashboard to manage the cluster.
 
+**Note: For the current release of Oracle Container Engine, you must install the Oracle Cloud Infrastructure CLI tool in order to download the kubeconfig file. In future releases of the OKE, you will be able to download the kubeconfig file directly from within the OCI Console**
+
 
 ### **STEP 5.1**: Generate an API Signing Key Pair
 
@@ -457,17 +459,17 @@ Before using the CLI, you have to create a config file that contains the require
 
   ![](images/200/91.png)
 
-- Click the **Access Kubeconfig** button to display the How to **Access Kubeconfig dialog box**
+- Click the **Access Kubeconfig** button to display the **How to Access Kubeconfig dialog box**
 
 - Click the **Download script** button to download the `get-kubeconfig.sh` file to a convenient location on the machine where you installed the Oracle Cloud Infrastructure CLI (for example, your home directory).
 
   ![](images/200/92.png)
 
-- Make the get-kubeconfig.sh file executable. For example on Linux or MacOS:
+- Make the `get-kubeconfig.sh` file executable. For example on Linux or MacOS:
 
   `$ chmod +x ~/get-kubeconfig.sh`
 
-- Set the **ENDPOINT** environment variable to point to the region in which you created the cluster. Use one of us-phoenix-1, us-ashburn-1, eu-frankfurt-1, or uk-london-1 to specify the region. For example, on Linux or MacOS:
+- Set the **ENDPOINT** environment variable to point to the region in which you created the cluster. Use one of **us-phoenix-1**, **us-ashburn-1**, **eu-frankfurt-1**, or **uk-london-1** to specify the region. For example, on Linux or MacOS:
 
   `$ export ENDPOINT=containerengine.us-phoenix-1.oraclecloud.com`
 
@@ -476,7 +478,7 @@ Before using the CLI, you have to create a config file that contains the require
 
   `$ ~/get-kubeconfig.sh ocid1.cluster.oc1.phx.aaaaaaaaae... > ~/kubeconfig`
 
-  Where ocid1.cluster.oc1.phx.aaaaaaaaae... is the OCID of the current cluster.
+  Where `ocid1.cluster.oc1.phx.aaaaaaaaae...` is the OCID of the current cluster.
 
 - For convenience, the command in the How to **Access Kubeconfig** dialog box already includes the cluster's OCID. You can simply copy and paste that command.
 
@@ -493,15 +495,15 @@ Before using the CLI, you have to create a config file that contains the require
 
   Information about the nodes in the cluster should be shown.
 
-You can now use kubectl and the Kubernetes Dashboard to perform operations on the cluster.
+You can now use `kubectl` and the Kubernetes Dashboard to perform operations on the cluster.
 
 
 ### **STEP 6**: Starting The Kubernetes Dashboard
 
 Kubernetes Dashboard is a web-based user interface that you can use as an alternative to the Kubernetes kubectl command line tool to:
 
-- deploy containerized applications to a Kubernetes cluster
-- troubleshoot your containerized applications
+- Deploy containerized applications to a Kubernetes cluster
+- Troubleshoot your containerized applications
 
 You use the Kubernetes Dashboard to get an overview of applications running on a cluster, as well as to create or modify individual Kubernetes resources. The Kubernetes Dashboard also reports the status of Kubernetes resources in the cluster, and any errors that have occurred.
 
@@ -511,7 +513,7 @@ Before you can use the Kubernetes Dashboard, you need to specify the cluster on 
 
 To start the Kubernetes Dashboard:
 
-- In a terminal window where you have exported the `KUBECONFIG` environment variable, enter **kubectl proxy** to ebable the Kubernetes Dashboard access.
+- In a terminal window where you have exported the `KUBECONFIG` environment variable, enter `kubectl proxy` to ebable the Kubernetes Dashboard access.
 
 - Open a browser and go to http://localhost:8001/ui to display the Kubernetes Dashboard.
 
