@@ -198,6 +198,8 @@ However, if a default Route Table has been created, then you only need to add a 
 
 - Click on **Edit Route Rules**
 
+- Click on **+Add Route Table**
+
 - Enter the following:
   - **Target Type:** `Internet Gateway`
   - **Destination CIDR block:** `0.0.0.0/0`
@@ -244,7 +246,7 @@ Let's create the security lists and rules.
 
 - Click **Create Security Lists**
 
-- Enter the following for first Ingress rule for **oke-worker** security list name:
+- Under the **Allow Rules for Ingress**, enter the following for first Ingress rule for **oke-worker** security list name:
   - **Security List Name:** `oke-workers`
   - **Stateless:** `Yes`
   - **Source CIDR:** `10.0.10.0/24`
